@@ -8,4 +8,4 @@ Fonte: https://www.w3schools.com/angular/default.asp
    ### DOCUMENTOS CONTIDOS NESTE REPOSITÓRIO:
     
 * ANGULAR 1 - Todas as informações básicas para compreensão e desenvolvimento utilizando o framework.
-* ANGULAR REFERENCIAS - Todas as diretivas listadas com suas respectivas funionalidades. 
+* ANGULAR REFERÊNCIAS - Todas as diretivas listadas com suas respectivas funionalidades. 
