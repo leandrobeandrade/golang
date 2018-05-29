@@ -1,19 +1,11 @@
-# TUTORIAIS W3SCHOOLS
-Neste repositório estão localizados arquivos tipo .docx com a tradução dos tutoriais realizados pelo site W3Schools, que serve como uma ampla fonte de referência para todos os desenvolvedores iniciantes ou não das tecnologias Web, tanto Front-end como Back-end.
+# ANGULAR JS
+Neste repositório estão localizados arquivos tipo .docx com a tradução dos tutoriais realizados pelo site W3Schools, sobre este framework da linguagem Javascript.
 
-O intuito deste repositório é apenas facilitar o aprendizado de pessoas que tenham algum tipo de dificuldade no site, pois todas as explicações estão em inglês, as vezes perdendo tempo ou o foco para se tentar fazer por entender todas as explicações.
-
-Todo o conteúdo foi retirado do site da W3Schools a partir de 17/05/2017, portanto, quaisquer erros ou desatualizações de determinadas características, de qualquer comportamento e de qualquer linguagem, por favor, desconsidere. Com certeza no site deverá haver a correção ou atualização necessária e disponível para averiguação, pois sempre que existe uma atualização pendente de qualquer tecnologia disponibilizada pela W3Schools eles prontamente atualizam seus sistemas. Quaisquer erros de tradução que for encontrado por favor peço que também desconsiderem. 
-
-Fonte: https://www.w3schools.com
+Fonte: https://www.w3schools.com/angular/default.asp
 
 > Para poder utilizar os documentos faça o download do mesmo clicando no botão à direita de cada documento.
 
-   ### TECNOLOGIAS CONTIDAS NESTE REPOSITÓRIO:
+   ### DOCUMENTOS CONTIDOS NESTE REPOSITÓRIO:
     
-* AJAX
-* ANGULAR1
-* CSS
-* JAVASCRIPT
-* JSON
-* XML
+* ANGULAR 1 - Todas as informações básicas para compreensão e desenvolvimento utilizando o framework.
+* ANGULAR REFERENCIAS - Todas as diretivas listadas com suas respectivas funionalidades. 
