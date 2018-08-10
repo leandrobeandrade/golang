@@ -12,7 +12,7 @@ Fonte: https://www.w3schools.com
    ### TECNOLOGIAS CONTIDAS NESTE REPOSITÓRIO:
     
 * AJAX
-* ANGULAR1
+* ANGULAR v.1
 * CSS
 * JAVASCRIPT
 * JSON
