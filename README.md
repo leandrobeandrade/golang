@@ -1,12 +1,16 @@
 # Golang
 
-Materiais a respeito da linguagem GO de diversos cursos em diferentes plataformas:
+Materiais a respeito da linguagem [GO](https://go.dev/) de diversos cursos em diferentes plataformas:
 
 ## Youtube
 
-- https://youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg
+- [Aprenda Go](https://youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg)
 
 ## Udemy
+
+...
+
+## Outros
 
 ...
 
