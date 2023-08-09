@@ -1,6 +1,6 @@
 # Golang
 
-Materias a respeito da linguagem GO de diversos cursos em diferentes plataformas:
+Materiais a respeito da linguagem GO de diversos cursos em diferentes plataformas:
 
 ## Youtube
 
