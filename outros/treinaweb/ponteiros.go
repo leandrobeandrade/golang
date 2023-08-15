@@ -1,69 +1,52 @@
 package main
 
-import "fmt"
-
-type Person struct {
-    name string
-    age int
-    email string
-}
+import ("fmt")
 
 func porValor(c int) {
-    c = 20
+	c = 20
 }
 
 func porReferencia(d *int) {
-    *d = 20
+	*d = 20
 }
 
 func main() {
-    age := 10
-    fmt.Println("Olá Mundo GO >>>>", age)
+	a := 10
+	var b *int = &a
 
-    fmt.Println("\n### if/else ###")
-    if age >= 18 {
-        fmt.Println("Maior!")
-    } else {
-        fmt.Println("Menor!")
-    }
+	fmt.Println("\n### ponteiros ###")
+	fmt.Println("A ender ", &a)
+	fmt.Println("B ender ", b)
+	fmt.Println("A valor ", *b)
 
-    fmt.Println("\n### for ###")
-    for i := 0; i < 10; i++ {
-        fmt.Println("i => ", i)
-    }
+	*b = 20
 
-    person := Person {
-        name: "Fulano",
-        age: 35,
-        email: "fulano@gmail.com",
-    }
+	fmt.Printf("\nNovo valor a %d\n", a)
+	fmt.Printf("Novo valor b %d\n", *b)
 
-    fmt.Println("\n### struct ###")
-    fmt.Println("A pessoa tem o nome ", person.name, " a idade ", person.age, " anos e o email: ", person.email)
+	var c int = 10
+	var d int = 10
 
-    a := 10
-    var b *int = &a
+	fmt.Println("\n### passagem por valor ###")
+	fmt.Printf("Valor c %d\n", c)
+	porValor(c)
+	fmt.Printf("Valor c %d\n", c)
 
-    fmt.Println("\n### ponteiros ###")
-    fmt.Println("A ender ", &a)
-    fmt.Println("B ender ", b)
-    fmt.Println("A valor ", *b)
+	fmt.Println("\n### passagem por referencia ###")
+	fmt.Printf("Valor d %d\n", d)
+	porReferencia(&d)
+	fmt.Printf("Valor d %d\n", d)
 
-    *b = 20
+  fmt.Println("\n============================================\n")
 
-    fmt.Printf("\nNovo valor a %d\n", a)
-    fmt.Printf("Novo valor b %d\n", *b)
+  i, j := 42, 2701
 
-    var c int = 10
-    var d int = 10
+  p := &i         // endereço de memória para i (ponteiro de i)
+  fmt.Println(*p) // lê o valor de i através do ponteiro
+  *p = 21         // altera o valor de i através do ponteiro
+  fmt.Println(i)  // lê o novo valor de i
 
-    fmt.Println("\n### passagem por valor ###")
-    fmt.Printf("Valor c %d\n", c)
-    porValor(c)
-    fmt.Printf("Valor c %d\n", c)
-
-    fmt.Println("\n### passagem por referencia ###")
-    fmt.Printf("Valor d %d\n", d)
-    porReferencia(&d)
-    fmt.Printf("Valor d %d\n", d)
+  p = &j         // ponteiro de J
+  *p = *p / 37   // divide o valor de J usando o ponteiro
+  fmt.Println(j) // verifica o novo valor de J
 }
