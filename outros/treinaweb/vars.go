@@ -13,7 +13,7 @@ func main() {
   fmt.Println("tipo inferido ", idade)
 
   // declaração e atribuição direta
-	var idade1 int = 18
+  var idade1 int = 18
   fmt.Println("tipada ", idade1)
 
   // declaração tipada com atribuição posterior
