@@ -3,39 +3,39 @@ package main
 import ("fmt")
 
 func porValor(c int) {
-	c = 20
+  c = 20
 }
 
 func porReferencia(d *int) {
-	*d = 20
+  *d = 20
 }
 
 func main() {
-	a := 10
-	var b *int = &a
+  a := 10
+  var b *int = &a
 
-	fmt.Println("\n### ponteiros ###")
-	fmt.Println("A ender ", &a)
-	fmt.Println("B ender ", b)
-	fmt.Println("A valor ", *b)
+  fmt.Println("\n### ponteiros ###")
+  fmt.Println("A ender ", &a)
+  fmt.Println("B ender ", b)
+  fmt.Println("A valor ", *b)
 
-	*b = 20
+  *b = 20
 
-	fmt.Printf("\nNovo valor a %d\n", a)
-	fmt.Printf("Novo valor b %d\n", *b)
+  fmt.Printf("\nNovo valor a %d\n", a)
+  fmt.Printf("Novo valor b %d\n", *b)
 
-	var c int = 10
-	var d int = 10
+  var c int = 10
+  var d int = 10
 
-	fmt.Println("\n### passagem por valor ###")
-	fmt.Printf("Valor c %d\n", c)
-	porValor(c)
-	fmt.Printf("Valor c %d\n", c)
+  fmt.Println("\n### passagem por valor ###")
+  fmt.Printf("Valor c %d\n", c)
+  porValor(c)
+  fmt.Printf("Valor c %d\n", c)
 
-	fmt.Println("\n### passagem por referencia ###")
-	fmt.Printf("Valor d %d\n", d)
-	porReferencia(&d)
-	fmt.Printf("Valor d %d\n", d)
+  fmt.Println("\n### passagem por referencia ###")
+  fmt.Printf("Valor d %d\n", d)
+  porReferencia(&d)
+  fmt.Printf("Valor d %d\n", d)
 
   fmt.Println("\n============================================\n")
 
