@@ -2,19 +2,18 @@ package main
 
 import ("fmt")
 
-type Person struct {
-	name  string
-	age   int
-	email string
+type Pessoa struct {
+  nome  string
+  idade int
+	casado bool
 }
 
 func main() {
-	person := Person{
-	  name:  "Fulano",
-		age:   35,
-		email: "fulano@gmail.com",
-	}
+  pessoa := Pessoa {
+    nome:  "Fulano",
+    idade:   35,
+    casado: true,
+  }
 
-	fmt.Println("\n### struct ###")
-	fmt.Println("A pessoa tem o nome ", person.name, " a idade ", person.age, " anos e o email: ", person.email)
+  fmt.Println("A pessoa tem o nome ", pessoa.nome, " a idade de ", pessoa.idade, " anos e casado: ", pessoa.casado)
 }
