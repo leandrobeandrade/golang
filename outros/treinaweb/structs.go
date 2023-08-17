@@ -5,7 +5,7 @@ import ("fmt")
 type Pessoa struct {
   nome  string
   idade int
-	casado bool
+  casado bool
 }
 
 func main() {
