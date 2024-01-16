@@ -2,31 +2,33 @@ package main
 
 import "fmt"
 
-var global string = "Olá mundo >>> GO"
+var global string = "Olá mundo GO >>>"
 
-func main() {
-  // variável disponível em todo escopo
-  fmt.Println(global)
+func vars() {
+	fmt.Println("===== VARIAVEIS =====")
 
-  // declaração com inferência do tipo
-  var idade = 10
-  fmt.Println("tipo inferido ", idade)
+	// variável disponível em todo escopo
+	fmt.Println(global)
 
-  // declaração e atribuição direta
-  var idade1 int = 18
-  fmt.Println("tipada ", idade1)
+	// declaração com inferência do tipo
+	var idade1 = 10
+	fmt.Println("tipo int inferido ", idade1)
 
-  // declaração tipada com atribuição posterior
-  var idade2 int
-  idade2 = 30
+	// declaração e atribuição direta
+	var idade2 int = 18
+	fmt.Println("tipada com valor ", idade2)
 
-  fmt.Println("atribuição posterior ", idade2)
+	// declaração tipada com atribuição posterior
+	var idade3 int
+	idade2 = 30
 
-  // operador gopher só funciona em funções e com inferência do tipo
-  idade3 := 15
-  fmt.Println("gopher", idade3)
+	fmt.Println("atribuição posterior ", idade3)
 
-  // constantes devem ser inicializadas e não precisam ser tipadas
-  const PI float64 = 3.141592653589793
-  fmt.Println("const", PI)
+	// operador gopher só funciona em funções e com inferência do tipo
+	idade4 := 15
+	fmt.Println("gopher", idade4)
+
+	// constantes devem ser inicializadas e não precisam ser tipadas
+	const PI float64 = 3.141592653589793
+	fmt.Println("const", PI)
 }

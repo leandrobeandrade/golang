@@ -1,3 +1,3 @@
-module treinaweb/exemplos
+module treinaweb
 
 go 1.20

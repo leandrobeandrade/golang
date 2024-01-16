@@ -1,19 +1,23 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 type Pessoa struct {
-  nome  string
-  idade int
-  casado bool
+	nome   string
+	idade  int
+	casado bool
 }
 
-func main() {
-  pessoa := Pessoa {
-    nome:  "Fulano",
-    idade:   35,
-    casado: true,
-  }
+func structs() {
+	fmt.Println("\n===== STRUCTS =====")
 
-  fmt.Println("A pessoa tem o nome ", pessoa.nome, " a idade de ", pessoa.idade, " anos e casado: ", pessoa.casado)
+	pessoa := Pessoa{
+		nome:   "Fulano",
+		idade:  35,
+		casado: true,
+	}
+
+	fmt.Println("A pessoa tem o nome", pessoa.nome, "a idade de", pessoa.idade, "anos e casado: ", pessoa.casado)
 }
