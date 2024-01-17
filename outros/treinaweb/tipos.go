@@ -65,9 +65,19 @@ func tipos() {
 	fmt.Println(!bol)
 
 	fmt.Println("\n### Slice ###")
-	primes := [6]int{2, 3, 5, 7, 11, 13}
+	primes := []int{2, 3, 5, 7, 11, 13} // slice NÃO PRECISA passar quantidade de elementos
 	var s []int = primes[1:4]
 	fmt.Println(s)
+
+	fmt.Println("\n### Array ###")
+	var arr1 [2]string // array PRECISA passar quantidade de elementos
+	arr1[0] = "Hello"
+	arr1[1] = "World"
+	fmt.Println(arr1[0], arr1[1])
+	fmt.Println(arr1)
+
+	arr2 := [2]string{"mundo!", "Alô"}
+	fmt.Println(arr2[1], arr2[0])
 
 	fmt.Println("\n### Map ###")
 	map_ := map[rune]int{'A': 1, 'B': 2, 'C': 3}
