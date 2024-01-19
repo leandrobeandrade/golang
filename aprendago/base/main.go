@@ -58,7 +58,4 @@ func main() {
 	fmt.Println(a != 10) // operador diferente (true)
 	fmt.Println(a >= 10) // operador maior igual (true)
 	fmt.Println(a <= 10) // operador menor igual (false)
-
-	//
-
 }
