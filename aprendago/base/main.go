@@ -15,7 +15,7 @@ func main() {
 	fmt.Println(erros2)
 
 	prin1, prin2 := "Olá", "Mundo!!!"
-	sprin := fmt.Sprintln(prin1, prin2) // S... são utilizados para manipular os valores em stings
+	sprin := fmt.Sprintln(prin1, prin2) // S... são utilizados para manipular os valores em strings
 	fmt.Println(sprin)
 
 	fmt.Println("=== Tipos ===")
@@ -24,14 +24,21 @@ func main() {
 	fmt.Println(x, y, z)
 
 	fmt.Println("Strings")
-	st1 := "Isso é \ninterpretado \tpelo compliador"
-	st2 := `"Isso NÃO é \ninterpretado \tpelo compliador"`
+	st1 := "Isso é \ninterpretado \tpelo compilador"
+	st2 := `"Isso NÃO é \ninterpretado \tpelo compilador"`
 	fmt.Println(st1)
 	fmt.Println(st2)
 
+	fmt.Println("Conversão de tipos")
+	type hotdog int
+	var int1 hotdog = 10
+	var int2 int = 20
+	int2 = int(int1) // Conversão de um tipo criado (hotdog) para outro tipo (int)
+	fmt.Println(int2)
+
 	fmt.Println("\n=== Variáveis ===")
 	var dentro = "Variável tipada por inferência"
-	fora = "Variável decalarada e atribuido um valor"
+	fora = "Variável decalarada e atribuído um valor"
 	fmt.Println(dentro)
 	fmt.Println(fora)
 
