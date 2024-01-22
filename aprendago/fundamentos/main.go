@@ -46,5 +46,34 @@ func main() {
 	}
 
 	fmt.Println("================================")
+	fmt.Println("Sistemas numéricos")
+	num := 31337
+	fmt.Printf("Decimal: %d", num)
+	fmt.Printf("\nBinário: %b", num)
+	fmt.Printf("\nExadecimal: %#x\n", num)
 
+	fmt.Println("================================")
+	fmt.Println("Constantes")
+	const con1 int = 100 // Tipada
+	fmt.Println(con1)
+
+	const con2 = 10 // Não tem o tipo atribuído até ser usada
+	var var1 = 0
+	var var2 int
+	var fl float64
+
+	var1 = con2 // Funciona (mesmo tipo)
+	fmt.Println(var1)
+	var2 = con2 // Funciona (mesmo tipo)
+	fmt.Println(var2)
+	fl = con2 // Funciona pq con2 só sabe o tipo na momento do uso
+	fmt.Println(fl)
+	// fl = var2 ERRO pq float não pode receber int
+
+	const (
+		um   = 1 // Declaração múltipla
+		dois = 2
+		tres = 3
+	)
+	fmt.Printf("%v %v %d", um, dois, tres)
 }
