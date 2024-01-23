@@ -5,4 +5,6 @@ func main() {
 	Exe2()
 	Exe3()
 	Exe4()
+	Exe5()
+	Exe6()
 }
