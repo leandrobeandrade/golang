@@ -70,10 +70,51 @@ func main() {
 	fmt.Println(fl)
 	// fl = var2 ERRO pq float não pode receber int
 
-	const (
-		um   = 1 // Declaração múltipla
+	const ( // Declaração múltipla
+		um   = 1
 		dois = 2
 		tres = 3
 	)
-	fmt.Printf("%v %v %d", um, dois, tres)
+	fmt.Printf("%v %v %d\n", um, dois, tres)
+
+	fmt.Println("================================")
+	fmt.Println("Iota")
+	const ( // omitindo valores
+		quatro = iota
+		_      = iota
+		cinco  = iota
+		seis   = iota
+		_      = iota
+	)
+	fmt.Println(quatro, cinco, seis)
+
+	const ( // preenchimento automático
+		sete = iota
+		_
+		oito
+		nove
+		_
+	)
+	fmt.Println(sete, oito, nove)
+
+	const ( // realizando operações
+		dez = iota * 10
+		_
+		onze
+		doze
+		_
+	)
+	fmt.Println(dez, onze, doze)
+
+	fmt.Println("================================")
+	fmt.Println("Deslocamento de bits")
+	d1 := 1
+	d2 := d1 << 1
+	fmt.Printf("%b\n", d1)
+	fmt.Printf("%b\n", d2)
+
+	d3 := 2
+	d4 := d3 >> 1
+	fmt.Printf("%b\n", d3)
+	fmt.Printf("%b\n", d4)
 }
