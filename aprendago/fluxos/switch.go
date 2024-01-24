@@ -74,6 +74,16 @@ func Switch() {
 		fmt.Println("X maior que 5 ou menor que 3")
 	}
 
+	fmt.Println("\n=== Switch com inicialização ===")
+	switch x := 10; { // variável interna do switch
+	case (x == 5), (x == 6):
+		fmt.Println("X igual a 5 ou 6")
+	case x < 6:
+		fmt.Println("X menor que 5")
+	case (x > 5), (x < 3):
+		fmt.Println("X maior que 5 ou menor que 3")
+	}
+
 	fmt.Println("\n=== Outro exemplo ===")
 	var z interface{} = 10
 	switch z.(type) {
