@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func For() {
-	fmt.Println("=== FOR comum ===")
+	fmt.Println("=== FOR padrão ===")
 
 	for i := 1; i < 6; i++ {
 		fmt.Println(i)

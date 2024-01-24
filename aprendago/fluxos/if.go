@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func If() {
-	fmt.Println("\n=== IF comum ===")
+	fmt.Println("\n=== IF padrão ===")
 	a := 2
 	if a > 1 {
 		fmt.Println("Faz algo!")
