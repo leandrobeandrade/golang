@@ -44,4 +44,9 @@ func For() {
 		}
 		fmt.Println("Pares", i)
 	}
+
+	// Prática
+	for x := 33; x <= 122; x++ {
+		fmt.Printf("%d - %c\n", x, x)
+	}
 }
