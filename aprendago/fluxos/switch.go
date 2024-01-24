@@ -9,7 +9,7 @@ func Switch() {
 	case x == 5:
 		fmt.Println("X igual a 5") // Para aqui na primeira ocorrência verdadeira (no fall-through)
 	case x < 6:
-		fmt.Println("X menor que 5") // Mesmo verdadeiro parou na primeira ocorrência encontrada
+		fmt.Println("X menor que 6") // Mesmo verdadeiro parou na primeira ocorrência encontrada
 	case x > 5:
 		fmt.Println("X maior que 5")
 	}
@@ -62,5 +62,26 @@ func Switch() {
 		fmt.Println("Nome é Belciclano")
 	default:
 		fmt.Println("Não encontrou nenhum!!!")
+	}
+
+	fmt.Println("\n=== Switch com condições compostas ===")
+	switch {
+	case (x == 5), (x == 6):
+		fmt.Println("X igual a 5 ou 6")
+	case x < 6:
+		fmt.Println("X menor que 5")
+	case (x > 5), (x < 3):
+		fmt.Println("X maior que 5 ou menor que 3")
+	}
+
+	fmt.Println("\n=== Outro exemplo ===")
+	var z interface{} = 10
+	switch z.(type) {
+	case int:
+		fmt.Println("Tipo int")
+	case float32:
+		fmt.Println("Tipo float")
+	case bool:
+		fmt.Println("Tipo boolean")
 	}
 }
