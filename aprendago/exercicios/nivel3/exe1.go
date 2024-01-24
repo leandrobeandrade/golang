@@ -14,4 +14,5 @@ func Exe1() {
 			fmt.Printf("\t%U '%c'\n ", i, i)
 		}
 	}
+	fmt.Println()
 }

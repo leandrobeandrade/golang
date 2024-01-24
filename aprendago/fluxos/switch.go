@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func Switch() {
-	fmt.Println("\n=== Switch padrão ===")
+	fmt.Println("\n=== Switch sem statement ===")
 	x := 5
 	switch {
 	case x == 5:
@@ -14,7 +14,7 @@ func Switch() {
 		fmt.Println("X maior que 5")
 	}
 
-	fmt.Println("\n=== Switch com valor default ===")
+	fmt.Println("\n=== Switch com statement default ===")
 	y := "Fulano"
 	switch y {
 	case "Ciclano":
