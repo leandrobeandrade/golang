@@ -8,5 +8,4 @@ func main() {
 	Exe5()
 	Exe6()
 	Exe7()
-	Exe8()
 }
