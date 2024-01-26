@@ -57,7 +57,7 @@ func main() {
 	nums1 = append(nums1, nums2...)
 	fmt.Println(nums1)
 
-	fmt.Println("\n=== Deletando valores ===")
+	fmt.Println("\n=== Deletando valores SLICE ===")
 	sabores = append(sabores[:2], sabores[4:]...) // deleta valores (abacaxi, quatroqueijos)
 	fmt.Println(sabores[:])
 
@@ -87,4 +87,46 @@ func main() {
 	fmt.Println(ss)
 	fmt.Println(ss[1])
 	fmt.Println(ss[1][1])
+
+	fmt.Println("\n=== Altera o array original ===")
+	primeiroslice := []int{1, 2, 3, 4, 5}
+	fmt.Println("Slice 1:", primeiroslice)
+
+	segundoslice := append(primeiroslice[:2], primeiroslice[4:]...)
+	fmt.Println("Slice 2:", segundoslice)
+	fmt.Println("Slice 1:", primeiroslice) // Foi recortado e ficou com o valor recortado
+
+	fmt.Println("\n=== Map ===")
+	maps1 := map[string]int{
+		"Fulano":  11111,
+		"Ciclano": 22222,
+	}
+	fmt.Println(maps1)
+	fmt.Println(maps1["Fulano"])
+
+	maps1["Beltrano"] = 33333
+	fmt.Println(maps1)
+	fmt.Println(maps1["Zé"]) // Retorna 0, mas não dá erro
+
+	ze, ok := maps1["Ze"]
+	fmt.Println(ze, ok) // ok testemunha que 0 não é um valor atribuído, mas sim que não existe no map
+
+	maps2 := map[int]string{
+		1: "muito legal",
+		2: "menos legal um pouquinho",
+		3: "esse é massa",
+		4: "ruim",
+	}
+	tot := 0
+	for key, value := range maps2 {
+		fmt.Printf("\n%v %v", key, value)
+		tot += key
+	}
+	fmt.Println("\nTotal:", tot)
+
+	fmt.Println("\n=== Deletando valores MAP ===")
+	delete(maps2, 3)
+	for key, value := range maps2 {
+		fmt.Printf("\n%v %v", key, value)
+	}
 }
