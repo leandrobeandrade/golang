@@ -30,14 +30,14 @@ func main() {
 	for idx, val := range sli4 {
 		fmt.Println("No índice:", idx, "temos o valor:", val)
 	}
+	fmt.Println()
 
 	sli5 := []int{1, 2, 3}
-	var total int = 0
+	var total int = 1
 	for _, val := range sli5 {
-		fmt.Println(val)
 		total = total * val
 	}
-	fmt.Println("\nValor total:", total)
+	fmt.Println("Valor total:", total)
 	fmt.Println()
 
 	sabores := []string{"pepperoni", "mozzarela", "abacaxi", "quatroqueijos", "marguerita"}
@@ -46,5 +46,18 @@ func main() {
 	fmt.Println(sabores[:2])
 	fmt.Println(sabores[2:])
 	// fmt.Println(sabores[2:len(sabores)])
+	fmt.Println(sabores[:])
+
+	fmt.Println("\nAdiciona valores")
+	nums1 := []int{1, 2, 3}
+	nums2 := []int{8, 9, 10}
+
+	nums1 = append(nums1, 5, 6, 7)
+	fmt.Println(nums1)
+	nums1 = append(nums1, nums2...)
+	fmt.Println(nums1)
+
+	fmt.Println("\nDeletando valores") // deleta valores (abacaxi, quatroqueijos)
+	sabores = append(sabores[:2], sabores[4:]...)
 	fmt.Println(sabores[:])
 }
