@@ -16,6 +16,7 @@ func main() {
 	Expressao()
 	Retorno()
 	Callback()
+	Closure()
 }
 
 func basica() {

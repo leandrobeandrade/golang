@@ -13,22 +13,24 @@ func soma(x ...int) int {
 	return n
 }
 
-// Função que recebe uma outra função como argumento e retorna inteiro
-// Recebe valores, armazena os pares e soma estes valores
-func SomentePares(f func (...int) int, y ...int) int {
+// SomentePares - recebe uma outra função e um slice de inteiros como argumento e retorna inteiro
+// Soma - recebe valores pares e é executada
+func SomentePares(f func(...int) int, y ...int) int {
 	var sli []int
 
 	for _, v := range y {
-		if v % 2 ==0 {
+		if v%2 == 0 {
 			sli = append(sli, v)
 		}
 	}
 
-	total := f(soma(sli...)) 
+	total := f(soma(sli...))
 	return total
 }
 
-func Callback()  {
-	pares := SomentePares(soma, []int{1,2,3,4}...)
-	fmt.Println(pares)
+func Callback() {
+	pares := SomentePares(soma, []int{1, 2, 3, 4}...)
+	fmt.Println()
+	fmt.Println("Soma dos números pares:", pares)
+	fmt.Println()
 }
