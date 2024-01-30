@@ -12,6 +12,10 @@ func main() {
 	Defer()
 	Metodo()
 	Interfaces()
+	Anonima()
+	Expressao()
+	Retorno()
+	Callback()
 }
 
 func basica() {
