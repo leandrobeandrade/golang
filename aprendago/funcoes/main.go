@@ -11,6 +11,7 @@ func main() {
 
 	Defer()
 	Metodo()
+	Interfaces()
 }
 
 func basica() {

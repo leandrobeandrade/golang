@@ -10,6 +10,7 @@ type pessoa struct {
 func (p pessoa) pertence_ao_objeto_pessoa() {
 	fmt.Println()
 	fmt.Println(p.nome)
+	fmt.Println()
 }
 
 func Metodo() {

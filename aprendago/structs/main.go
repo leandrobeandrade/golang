@@ -61,7 +61,7 @@ func main() {
 	fmt.Println(pessoa3.nome) // consegue acessar elementos da struct interna se as propriedades não forem iguais
 	fmt.Println(pessoa3.titulo)
 
-	pessoa4 := struct {
+	pessoa4 := struct { // struct declarada e inicializada
 		nome  string
 		idade int
 	}{
