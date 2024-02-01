@@ -17,6 +17,7 @@ func main() {
 	Retorno()
 	Callback()
 	Closure()
+	Recursividade()
 }
 
 func basica() {
