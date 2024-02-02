@@ -39,4 +39,16 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(string(d))
+
+	sb := []byte(`{"Nome": "James", "Snome": "Bond", "Idade": 40, "Profis": "Agente secreto", "ContaBancaria": 1000000.5}`)
+	var dados pessoaJson
+
+	err = json.Unmarshal(sb, &dados)
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	fmt.Println()
+	fmt.Println(dados)
 }
