@@ -109,7 +109,7 @@ func main() {
 	fmt.Println(maps1["Zé"]) // Retorna 0, mas não dá erro
 
 	ze, ok := maps1["Ze"]
-	fmt.Println(ze, ok) // ok testemunha que 0 não é um valor atribuído, mas sim que não existe no map
+	fmt.Println(ze, ok) // ok testifica que 0 não é um valor atribuído, mas sim que não existe no map
 
 	maps2 := map[int]string{
 		1: "muito legal",
