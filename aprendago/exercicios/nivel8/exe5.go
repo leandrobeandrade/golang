@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 type user__ struct {
 	First   string
@@ -45,5 +48,33 @@ func Exe5() {
 
 	users := []user__{u1, u2, u3}
 
+	fmt.Println()
 	fmt.Println(users)
+
+	sort.Slice(users, func(i, j int) bool {
+		return users[i].Age < users[j].Age || (users[i].Age == users[j].Age && users[i].Last < users[j].Last)
+	})
+
+	for i, u := range users {
+		fmt.Printf("%d. %s %s, %d:\n", i+1, u.First, u.Last, u.Age)
+
+		for j, s := range u.Sayings {
+			fmt.Printf("\t%d. %s\n", j+1, s)
+		}
+
+		fmt.Println()
+	}
+
+	fmt.Println("-- Outra Maneira --")
+	printUsers(users)
+}
+
+func printUsers(users []user__) {
+	for i, user := range users {
+		fmt.Printf("%v\t Name: %v %v Age: %v\n \t Sayings:\n", i+1, user.First, user.Last, user.Age)
+		for _, say := range user.Sayings {
+			fmt.Printf("\t\t%v\n", say)
+		}
+		fmt.Println()
+	}
 }
