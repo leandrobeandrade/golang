@@ -36,6 +36,8 @@ func main() {
 
 	fmt.Println()
 	Condicao()
+	fmt.Println()
+	Mutex()
 }
 
 func um() {
