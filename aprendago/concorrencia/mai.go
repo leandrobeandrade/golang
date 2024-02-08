@@ -33,6 +33,9 @@ func main() {
 	go um()
 	go dois()
 	wg.Wait()
+
+	fmt.Println()
+	Condicao()
 }
 
 func um() {
