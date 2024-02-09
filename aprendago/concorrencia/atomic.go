@@ -7,6 +7,7 @@ import (
 	"sync/atomic"
 )
 
+// Função atomica -> executa do começo ao fim não em partes
 func Atomic() {
 	fmt.Println("CPUs:", runtime.NumCPU())
 
