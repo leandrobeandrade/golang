@@ -38,6 +38,8 @@ func main() {
 	Condicao()
 	fmt.Println()
 	Mutex()
+	fmt.Println()
+	Atomic()
 }
 
 func um() {
