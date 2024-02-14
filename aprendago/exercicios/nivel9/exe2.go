@@ -32,5 +32,6 @@ func Exe2() {
 
 	fmt.Println()
 	pessoa1.falar()
+	(&pessoa1).falar() // Também funciona - mais recomendável
 	dizerAlgumaCoisa(&pessoa2)
 }
