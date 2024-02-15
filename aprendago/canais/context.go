@@ -15,15 +15,13 @@ func context_() {
 
 	withCancel()
 
-	lang1 := lang{language: "Go"}
-	lang2 := lang{
-		language: "Python",
-	}
+	type lang string
+	l := lang("language")
 
-	ctx2 := context.WithValue(context.Background(), lang1, "Go")
-	withValue(ctx2, "language")
+	ctx2 := context.WithValue(context.Background(), l, "Go")
+	withValue(ctx2, string(l))
 
-	ctx2 = context.WithValue(ctx2, lang2, "Python")
+	ctx2 = context.WithValue(ctx2, l, "Python")
 	withValue(ctx2, "language")
 	withValue(ctx2, "other")
 }
@@ -45,8 +43,4 @@ func withValue(ctx context.Context, s string) {
 		return
 	}
 	fmt.Println("key not found:", s)
-}
-
-type lang struct {
-	language string
 }
