@@ -11,6 +11,8 @@ func divergencia() {
 	canal1 := make(chan int)
 	canal2 := make(chan int)
 
+	fmt.Println()
+
 	go manda(20, canal1)
 	go outra(canal1, canal2)
 
@@ -18,6 +20,7 @@ func divergencia() {
 		fmt.Println(v)
 	}
 
+	fmt.Println("--------------")
 	outraDivergencia()
 }
 
@@ -25,6 +28,7 @@ func manda(n int, canal chan int) {
 	for i := 0; i < n; i++ {
 		canal <- i
 	}
+
 	close(canal)
 }
 
@@ -38,6 +42,7 @@ func outra(canal1, canal2 chan int) {
 			wg.Done()
 		}(v)
 	}
+
 	wg.Wait()
 	close(canal2)
 }
@@ -65,11 +70,13 @@ func manda_(n int, canal chan int) {
 	for i := 0; i < n; i++ {
 		canal <- i
 	}
+
 	close(canal)
 }
 
 func outra_(funções int, canal1, canal2 chan int) {
 	var wg sync.WaitGroup
+
 	for i := 0; i < funções; i++ {
 		wg.Add(1)
 		go func() {
@@ -79,11 +86,12 @@ func outra_(funções int, canal1, canal2 chan int) {
 			wg.Done()
 		}()
 	}
+
 	wg.Wait()
 	close(canal2)
 }
 
 func trabalho__(n int) int {
-	time.Sleep(time.Millisecond * 1000) //time.Duration(rand.Intn(1e3)))
+	time.Sleep(time.Millisecond * 1000)
 	return n
 }

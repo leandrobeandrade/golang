@@ -24,6 +24,7 @@ func main() {
 	select___()
 	convergencia()
 	divergencia()
+	context_()
 }
 
 func send(s chan<- int) {
