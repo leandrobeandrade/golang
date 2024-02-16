@@ -15,15 +15,13 @@ func context_() {
 
 	withCancel()
 
-	type lang string
 	l := lang("language")
-
 	ctx2 := context.WithValue(context.Background(), l, "Go")
-	withValue(ctx2, string(l))
+	withValue(ctx2, l)
 
 	ctx2 = context.WithValue(ctx2, l, "Python")
-	withValue(ctx2, "language")
-	withValue(ctx2, "other")
+	withValue(ctx2, l)
+	withValue(ctx2, "Others")
 }
 
 func withCancel() {
@@ -37,7 +35,9 @@ func withCancel() {
 	fmt.Println("----------")
 }
 
-func withValue(ctx context.Context, s string) {
+type lang string
+
+func withValue(ctx context.Context, s lang) {
 	if v := ctx.Value(s); v != nil {
 		fmt.Println("found value:", v)
 		return

@@ -90,5 +90,6 @@ func converge(a, b chan string) chan string {
 			novo <- v
 		}
 	}()
+
 	return novo
 }
