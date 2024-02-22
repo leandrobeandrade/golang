@@ -9,7 +9,7 @@ Materiais a respeito da linguagem [GO](https://go.dev/) através de diversos cur
 
 ## Udemy
 
-...
+- [Golang do zero](https://www.udemy.com/share/103yNu3@cqdGubSUyGSbKPGSCxk9cnZ2vWnu4BKV6wSXUJqCINQOZ0cz5CPaKmy4BtFJ4cIY/)
 
 ## Outros
 
