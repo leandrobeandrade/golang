@@ -5,4 +5,5 @@ use (
 	./fullcycle
 	./outros/digitalocean
 	./outros/treinaweb
+	./udemy/golang_do_zero/fundamentos
 )
