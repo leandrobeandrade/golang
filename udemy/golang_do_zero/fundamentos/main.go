@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"udemy/golang_do_zero/fundamentos/pacotes"
 
@@ -40,15 +41,64 @@ func main() {
 	fmt.Println(variavel5, variavel6)
 
 	fmt.Println("\n=== Tipos de dados")
-	var numero int16 = -10000
+	var numero int = 1000000000000000000 // int usa a arquitetura do sistema
 	fmt.Println(numero)
 
-	var numero2 int16 = 127
+	var numero1 int16 = -10000 // int16 é um tipo de dado de 16 bits
+	fmt.Println(numero1)
+
+	var numero2 int32 = 1000000000 // int32 é um tipo de dado de 32 bits
 	fmt.Println(numero2)
 
-	var numero3 int16 = -128
+	var numero3 int64 = -1000000000000000000 // int64 é um tipo de dado de 64 bits
 	fmt.Println(numero3)
 
+	var numero4 uint8 = 100 // uint8 é um tipo de dado de 8 bits e positivo apenas
+	fmt.Println(numero4)
+
+	var numero5 rune = 10000 // rune é um tipo de dado de 32 bits equivalente a int32
+	fmt.Println(numero5)
+
+	var numero6 byte = 100 // byte é um tipo de dado de 8 bits equivalente a uint8
+	fmt.Println(numero6)
+
+	var numeroReal float32 = 123.456
+	fmt.Println(numeroReal)
+
+	var numeroReal2 float64 = 1234567890000.456
+	fmt.Println(numeroReal2)
+
+	numeroReal3 := 123.456 // float implicito utiliza a arquitetura do sistema
+	fmt.Println(numeroReal3)
+
+	fmt.Println("\n=== Strings")
+	var str string = "String"
+	fmt.Println(str)
+
+	var str2 string = `
+		String
+		com
+		quebra
+		de
+		linha
+	`
+	fmt.Println(str2)
+
+	char := 'B'
+	fmt.Println(char)
+
+	fmt.Println("\n=== Booleanos")
+	var booleano bool = true
+	fmt.Println(booleano)
+
+	fmt.Println("\n=== Erros")
+	var erro error = nil
+	fmt.Println(erro)
+
+	var err error = errors.New("erro interno")
+	fmt.Println(err)
+
+	fmt.Println("\n=== Arrays")
 	var meuArray [3]int
 	meuArray[0] = 1
 	meuArray[1] = 2
