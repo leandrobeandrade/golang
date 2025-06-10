@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"udemy/golang_do_zero/fundamentos/funcs"
 	"udemy/golang_do_zero/fundamentos/pacotes"
 
 	"github.com/badoux/checkmail"
@@ -130,4 +131,5 @@ func main() {
 	fmt.Println(meuSlice6)
 
 	fmt.Println("\n=== Funções")
+	funcs.AllFuncs()
 }
