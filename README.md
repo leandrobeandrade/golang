@@ -1,4 +1,4 @@
-# Golang
+# Golang :shipit:	
 
 Materiais a respeito da linguagem [GO](https://go.dev/) através de diversos cursos e artigos em diferentes plataformas:
 
