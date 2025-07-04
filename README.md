@@ -2,6 +2,8 @@
 
 Materiais a respeito da linguagem [GO](https://go.dev/) através de diversos cursos e artigos em diferentes plataformas:
 
+## :book: Livros
+
 ## :tv: Youtube
 
 - [Aprenda Go](https://youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg)
