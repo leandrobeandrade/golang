@@ -4,6 +4,8 @@ Materiais a respeito da linguagem [GO](https://go.dev/) através de diversos cur
 
 ## :book: Livros
 
+- [The Go Programming Language](https://www.gopl.io/)
+
 ## :tv: Youtube
 
 - [Aprenda Go](https://youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg)
